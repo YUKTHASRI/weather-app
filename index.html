@@ -3,18 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Weather App</title>
+  <title>Enhanced Weather App</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="weather-container">
     <h1>Weather App</h1>
+
     <div class="form-group">
       <input type="text" id="cityInput" placeholder="Enter city name" />
       <button onclick="getWeather()">Submit</button>
     </div>
+
+    <div class="toggle">
+      <label>
+        <input type="checkbox" id="unitToggle" onchange="toggleUnit()">
+        Show in Fahrenheit
+      </label>
+    </div>
+
     <div id="weatherResult" class="weather-result"></div>
+    <div id="forecastResult" class="forecast-result"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
