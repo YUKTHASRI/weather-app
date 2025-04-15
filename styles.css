@@ -20,20 +20,19 @@
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
   }
   
-  .weather-container h1 {
+  h1 {
     margin-bottom: 20px;
-    color: #333;
     font-size: 1.8rem;
   }
   
   .form-group {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     flex-direction: row;
   }
   
@@ -53,50 +52,46 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s;
   }
   
   button:hover {
     background-color: #005fcc;
   }
   
-  .weather-result {
-    font-size: 18px;
-    color: #333;
+  .weather-result, .forecast-result {
+    margin-top: 20px;
+    font-size: 16px;
   }
   
-  .weather-result img {
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
+  .weather-result img,
+  .forecast-day img {
+    width: 50px;
+    height: 50px;
   }
   
-  /* Responsive Design */
+  .forecast-day {
+    margin: 10px 0;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .toggle {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  /* Responsive */
   @media (max-width: 500px) {
-    .weather-container {
-      padding: 20px;
-    }
-  
     .form-group {
       flex-direction: column;
     }
   
-    input[type="text"],
-    button {
+    input[type="text"], button {
       width: 100%;
     }
   
-    .weather-container h1 {
+    h1 {
       font-size: 1.5rem;
-    }
-  
-    .weather-result {
-      font-size: 16px;
-    }
-  
-    .weather-result img {
-      width: 50px;
-      height: 50px;
     }
   }
   
